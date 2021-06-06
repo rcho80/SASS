@@ -1,0 +1,39 @@
+nav {
+  border: solid 1px black;
+  height: 40px;
+  min-width: 30%;
+  padding: 10px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex__space-between {
+  justify-content: space-between;
+}
+.flex__space-between--div {
+  display: flex;
+}
+.flex__space-between--div > div {
+  padding-right: 40px;
+}
+.flex__centred {
+  justify-content: space-around;
+}
+.flex__centred__centred > div {
+  padding-right: 60px;
+}
+.flex__row-reverse {
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+.flex__row-reverse--div {
+  display: flex;
+}
+.flex__row-reverse--div > div {
+  padding-right: 40px;
+}
+
+/*# sourceMappingURL=sass.css.map */

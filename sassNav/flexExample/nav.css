@@ -1,0 +1,8 @@
+nav {
+  border: solid 1px black;
+  padding: 20px;
+}
+
+.nav__group {
+  min-width: 30%;
+}

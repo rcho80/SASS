@@ -1,0 +1,61 @@
+@use "devices"as devices;
+@use "container"as container;
+
+.flag {
+  padding-top: 100px;
+  width: 50%;
+  display: flex;
+
+  &__segment {
+    min-height: 350px;
+    width: 100%;
+
+    @include devices.laptop {
+      &:first-child {
+        background-color: #008D44;
+      }
+
+      &:nth-child(2) {
+        background-color: #F7F7F7;
+      }
+
+      &:last-child {
+        background-color: #C82A35;
+      }
+    }
+
+    @include devices.tablet {
+      &:first-child {
+        background-color: #000000;
+      }
+
+      &:nth-child(2) {
+        background-color: #FAE140;
+      }
+
+      &:last-child {
+        background-color: #ED2436;
+      }
+    }
+  }
+
+  @include devices.phone {
+    display: block;
+
+    &__segment {
+      min-height: 100px;
+
+      &:first-child {
+        background-color: #000000;
+      }
+
+      &:nth-child(2) {
+        background-color: #D50000;
+      }
+
+      &:last-child {
+        background-color: #F7C800;
+      }
+    }
+  }
+}

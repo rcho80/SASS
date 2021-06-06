@@ -1,0 +1,21 @@
+.flex {
+  display: flex;
+}
+
+.flex__between {
+  justify-content: space-between;
+}
+
+
+.flex__evenly {
+  justify-content: space-evenly;
+}
+
+
+.flex__reverse {
+  flex-direction: row-reverse;
+}
+
+.flex__around {
+  justify-content: space-around;
+}

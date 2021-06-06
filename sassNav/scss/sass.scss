@@ -1,0 +1,43 @@
+@use "nav"as nav;
+
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__space-between {
+    justify-content: space-between;
+
+    &--div {
+      display: flex;
+
+      &>div {
+        padding-right: 40px;
+      }
+    }
+
+  }
+
+  &__centred {
+    justify-content: space-around;
+
+    &__centred>div {
+      padding-right: 60px;
+    }
+  }
+
+  &__row-reverse {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+
+    &--div {
+      display: flex;
+
+      &>div {
+        padding-right: 40px;
+      }
+    }
+  }
+
+}

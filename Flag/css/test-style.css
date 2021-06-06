@@ -1,0 +1,69 @@
+.container {
+  max-width: 1100px;
+  padding: 0 30px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.flag {
+  padding-top: 100px;
+  width: 50%;
+  display: flex;
+}
+
+.flag__segment {
+  min-height: 350px;
+  width: 100%;
+}
+
+
+@media only screen and (min-width: 993px) {
+  .flag__segment:first-child {
+    background-color: #008D44;
+  }
+
+  .flag__segment:nth-child(2) {
+    background-color: #F7F7F7;
+  }
+
+  .flag__segment:last-child {
+    background-color: #C82A35;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .flag__segment:first-child {
+    background-color: #000000;
+  }
+
+  .flag__segment:nth-child(2) {
+    background-color: #FAE140;
+  }
+
+  .flag__segment:last-child {
+    background-color: #ED2436;
+  }
+
+}
+
+@media only screen and (max-width: 576px) {
+  .flag {
+    display: block;
+  }
+
+  .flag__segment {
+    min-height: 100px;
+  }
+
+  .flag__segment:first-child {
+    background-color: #000000;
+  }
+
+  .flag__segment:nth-child(2) {
+    background-color: #D50000;
+  }
+
+  .flag__segment:last-child {
+    background-color: #F7C800;
+  }
+}
